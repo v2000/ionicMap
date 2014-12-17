@@ -10,13 +10,10 @@ angular.module('demo', [
 
   // modules
   // 'demo.adMob.ctrl',  // not working???
-  'demo.barcodeScanner.ctrl',
   'demo.camera.ctrl',
   'demo.clipboard.ctrl',
   'demo.contacts.ctrl',
   'demo.device.ctrl',
-  'demo.deviceMotion.ctrl',
-  'demo.deviceOrientation.ctrl',
   'demo.dialogs.ctrl',
   'demo.geolocation.ctrl',
   'demo.globalization.ctrl',
@@ -107,30 +104,6 @@ angular.module('demo', [
         controller: "OauthCtrl"
       })
 
-      .state('printer', {
-        url: '/printer',
-        templateUrl: 'app/printer/printer.html',
-        controller: "PrinterCtrl"
-      })
-
-      .state('socialSharing', {
-        url: '/socialSharing',
-        templateUrl: 'app/socialSharing/socialSharing.html',
-        controller: "SocialSharingCtrl"
-      })
-
-      .state('sqlite', {
-        url: '/sqlite',
-        templateUrl: 'app/sqlite/sqlite.html',
-        controller: "SqliteCtrl"
-      })
-
-      .state('barcodeScanner', {
-        url: '/barcodeScanner',
-        templateUrl: 'app/barcodeScanner/barcodeScanner.html',
-        controller: "BarcodeScannerCtrl"
-      })
-
       .state('batteryStatus', {
         url: '/batteryStatus',
         templateUrl: 'app/batteryStatus/batteryStatus.html',
@@ -147,19 +120,6 @@ angular.module('demo', [
         url: '/preferences',
         templateUrl: 'app/preferences/preferences.html',
         controller: "PreferencesCtrl"
-      })
-
-
-      .state('flashlight', {
-        url: '/flashlight',
-        templateUrl: 'app/flashlight/flashlight.html',
-        controller: "FlashlightCtrl"
-      })
-
-      .state('deviceMotion', {
-        url: '/deviceMotion',
-        templateUrl: 'app/deviceMotion/deviceMotion.html',
-        controller: "DeviceMotionCtrl"
       })
 
       .state('network', {
